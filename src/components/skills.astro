@@ -4,10 +4,17 @@ import Skill from "./skill.astro";
 
 <h2>Habilidades</h2>
 <div class="skills-container">
-    <Skill src="/Portfolio/kotlin.png" alt="Kotlin"/>
-    <Skill src="/Portfolio/java.png" alt="Java"/>
-    <Skill src="/Portfolio/mongodb.png" alt="MongoDB"/>
-    <Skill src="/Portfolio/mysql.png" alt="MySQL"/>
+    <Skill src="/Portfolio/kotlin.png" alt="Kotlin" href="https://kotlinlang.org/"/>
+    <Skill src="/Portfolio/java.png" alt="Java" href="https://www.java.com/es/"/>
+    <Skill src="/Portfolio/typescript.png" alt="TypeScript" href="https://www.typescriptlang.org/"/>
+    <Skill src="/Portfolio/mongodb.png" alt="MongoDB" href="https://www.mongodb.com/"/>
+    <Skill src="/Portfolio/mysql.png" alt="MySQL" href="https://www.mysql.com/"/>
+    <Skill src="/Portfolio/git.png" alt="Git" href="https://git-scm.com/"/>
+    <Skill src="/Portfolio/html.png" alt="HTML" href="https://developer.mozilla.org/es/docs/Web/HTML"/>
+    <Skill src="/Portfolio/css.png" alt="CSS" href="https://developer.mozilla.org/es/docs/Web/CSS"/>
+    <Skill src="/Portfolio/astro.png" alt="Astro" href="https://astro.build/" />
+    <Skill src="/Portfolio/intellij.png" alt="IntelliJ IDEA" href="https://www.jetbrains.com/es-es/idea/" />
+    <Skill src="/Portfolio/vscode.png" alt="VS Code" href="https://code.visualstudio.com/" />
 </div>
 
 <style>
@@ -20,9 +27,17 @@ import Skill from "./skill.astro";
         font-family: 'Pixelify Sans', monospace;
     }
     div {
+        max-width: 800px;
         display: flex;
         gap: 50px;
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    @media(max-width: 800px) {
+        div {
+            gap: 40px;
+        }  
+    }
+
 </style>
