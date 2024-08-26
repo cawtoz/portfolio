@@ -3,12 +3,13 @@ import Header from "../components/header.astro";
 import About from "../components/about.astro";
 import Contact from "../components/contact.astro";
 import Skills from "../components/skills.astro";
+import Background from "../components/background.astro";
+import Wave from "../components/wave.astro";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" type="image/bmp" href="/Portfolio/cawtoz.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,30 +18,36 @@ import Skills from "../components/skills.astro";
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Carlos Torres</title>
 	</head>
 	<body>
-        <div>
-            <Header/>
-            <About/>
-            <Skills/>
-            <Contact/>
-        </div>
+        <Background/>
+        <Header/>
+        <section id="about"><About/></section>
+        <section id="skills"><Skills/></section>
+        <section id="contact"><Contact/></section>
 	</body>
 </html>
 
-<style>
-    * {
+<style is:global>
+    * { 
         font-family: 'Fira Code', monospace;
-        font-weight: 500;
+        color: #dbdbd7;
         font-size: 16px;
+        font-weight: 500;
         margin: 0px;
         padding: 0px;
-        color: #dbdbd7;
     }
-
-    body {
+    html {
         background-color: #0f0f10;
     }
+    section {
+        padding: 100px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
 
 </style>
