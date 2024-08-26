@@ -1,0 +1,95 @@
+<header>
+    <p>Portafolio</p>
+    <div class="icon">☰</div>
+    <nav>
+        <a href="#about">Acerca de</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+</header>
+<div class="void"></div>
+
+<style>
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background-color: #0f0f10;
+        box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+        transition: top 0.3s;
+    }
+
+    .void {
+        height: 70px;
+    }
+
+    p {
+        color: #bd1b1b;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+        font-family: 'Pixelify Sans', monospace;
+    }
+
+    .icon {
+        position: relative;
+        right: 60px;
+        font-size: 30px;
+        opacity: 0;
+    }
+
+    nav {
+        padding-right: 50px;
+        a {
+            color: #dbdbd7;
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+
+    .icon:hover, nav a:hover {
+        transition: color 0.3s ease-in-out;
+        color: #bd1b1b;
+        cursor: pointer;
+    }
+
+    .vertical-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 75px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #0f0f10;
+        box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+        /* box-shadow: 0px 10px 5px -2px rgb(0, 0, 0); */
+    }
+
+    @media(max-width: 700px) {
+        nav {
+            display: none;
+        }
+        .icon {
+            opacity: 1;
+        }
+    }
+
+</style>
+
+<script>
+    const button = document.querySelector<HTMLDivElement>('.icon');
+
+    button.addEventListener('click', () => {
+
+        const nav = document.querySelector<HTMLElement>('nav');
+        nav.classList.toggle('vertical-nav');
+    })
+</script>

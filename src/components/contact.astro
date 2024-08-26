@@ -1,0 +1,132 @@
+<section>
+    <h2>Contacto</h2>
+    <form action="/" method="POST">
+
+        <div class="row">
+            <div class="name">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="email">
+                <label for="email">Correo</label>
+                <input type="text" name="email" id="email">
+            </div>
+        </div>
+        
+        <div class="message">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</section>
+
+
+<style>
+
+    section {
+        background-color: #161618;
+        padding: 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    form {
+        width: 90%;
+    }
+
+    h2 {
+        color: #bd1b1b;
+        font-size: 50px;
+        margin: 0px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        font-family: 'Pixelify Sans', monospace;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    label {
+        text-align: left;
+    }
+
+    input, textarea {
+        border: none;
+        padding: 20px;
+        border-radius: 5px;
+        color: #dbdbd7;
+        font-family: 'Fira Code', monospace;
+        background-color: #222224;
+        resize: none;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .name {
+        margin-right: 10px;
+    }
+
+    .email { 
+        margin-left: 10px;
+    }
+
+    #message {
+        height: 100px;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #bd1b1b;
+        outline: none;
+    }
+
+    button {
+        color: #dbdbd7;
+        background-color: #bd1b1b;
+        border-radius: 5px;
+        padding: 12px;
+        width: 100%;
+        border: none;
+        font-family: 'Fira Code', monospace;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        transition: background-color 0.3s ease-in-out;
+        background-color: #971717;
+    }
+
+    @media(max-width: 850px) {
+        .row {
+            flex-direction: column;
+        }
+        .name {
+            margin-right: 0px;
+        }
+
+        .email { 
+            margin-left: 0px;
+        }
+    }
+
+    
+
+</style>

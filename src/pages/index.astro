@@ -1,0 +1,43 @@
+---
+import Header from "../components/header.astro";
+import About from "../components/about.astro";
+import Contact from "../components/contact.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+        <div>
+            <Header/>
+            <About/>
+            <Contact/>
+        </div>
+	</body>
+</html>
+
+<style>
+    * {
+        font-family: 'Fira Code', monospace;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px;
+        color: #dbdbd7;
+    }
+
+    body {
+        background-color: #0f0f10;
+    }
+
+</style>
