@@ -1,0 +1,42 @@
+---
+import Skill from "./skill.astro";
+---
+
+<section>
+    <h2>Habilidades</h2>
+    <div class="skills-container">
+        <Skill src="/public/kotlin.png" alt="Kotlin"/>
+        <Skill src="/public/java.png" alt="Java"/>
+        <Skill src="/public/mongodb.png" alt="MongoDB"/>
+        <Skill src="/public/mysql.png" alt="MySQL"/>
+    </div>
+</section>
+
+<style>
+    
+    section {
+        padding: 200px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        color: #bd1b1b;
+        font-size: 50px;
+        margin: 0px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        font-family: 'Pixelify Sans', monospace;
+    }
+
+    div {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+</style>
