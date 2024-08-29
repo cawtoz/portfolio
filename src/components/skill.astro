@@ -20,7 +20,7 @@ const { href, src, alt } = Astro.props as Props;
 
     div {
         position: relative;
-        width: 150px;
+        width: 50px;
         display: flex;
         flex-direction: column;
         cursor: pointer;
@@ -68,12 +68,6 @@ const { href, src, alt } = Astro.props as Props;
 
     div:hover img {
         transform: scale(1.2);
-    }
-
-    @media(max-width: 800px) {
-        div {
-            width: 60px;
-        }  
     }
 
 </style>
