@@ -1,8 +1,14 @@
 ---
 import Loading from "./loading.astro";
+import Project from "./project.astro";
 ---
 
 <h2>Proyectos</h2>
+<Project title="Dine API" href="https://github.com/cawtoz/dine-api">
+    <img class="skill" src="/Portfolio/skills/kotlin.png" alt="Kotlin">
+    <img class="skill" src="/Portfolio/skills/ktor.png" alt="Ktor">
+    <img class="skill" src="/Portfolio/skills/postgresql.png" alt="PostgreSQL">
+</Project>
 <Loading/>
 
 <style>
@@ -13,5 +19,9 @@ import Loading from "./loading.astro";
         font-weight: 600;
         margin-bottom: 50px;
         font-family: 'Pixelify Sans', monospace;
+    }
+    .skill {
+        width: 20px;
+        padding-left: 10px;
     }
 </style>
