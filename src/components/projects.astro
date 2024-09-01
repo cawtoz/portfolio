@@ -3,23 +3,37 @@ import Loading from "./loading.astro";
 import Project from "./project.astro";
 ---
 
-<h2>Proyectos</h2>
-<Project title="Dine API" href="https://github.com/cawtoz/dine-api">
-    <img class="skill" src="/Portfolio/skills/kotlin.png" alt="Kotlin">
-    <img class="skill" src="/Portfolio/skills/ktor.png" alt="Ktor">
-    <img class="skill" src="/Portfolio/skills/postgresql.png" alt="PostgreSQL">
-</Project>
-<Loading/>
+<h2 class="title">Proyectos</h2>
+<div>
+    <Project 
+        title="Dine API" 
+        href="https://github.com/cawtoz/dine-api"
+        imgSrc="/Portfolio/projects/dine-api.webp"
+        imgAlt="dine-api">
+        <img class="skill" src="/Portfolio/skills/kotlin.webp" alt="Kotlin" loading="lazy">
+        <img class="skill" src="/Portfolio/skills/ktor.webp" alt="Ktor" loading="lazy">
+        <img class="skill" src="/Portfolio/skills/postgresql.webp" alt="PostgreSQL" loading="lazy">
+    </Project>
+    <Project 
+        title="Portafolio" 
+        href="https://github.com/cawtoz/Portfolio"
+        imgSrc="/Portfolio/projects/portfolio.webp"
+        imgAlt="dine-api">
+        <img class="skill" src="/Portfolio/skills/html.webp" alt="HTML" loading="lazy">
+        <img class="skill" src="/Portfolio/skills/css.webp" alt="CSS" loading="lazy">
+        <img class="skill" src="/Portfolio/skills/astro.webp" alt="Astro" loading="lazy">
+    </Project>
+</div>
 
 <style>
-    h2 {
-        color: #bd1b1b;
-        font-size: 50px;
-        margin: 0px;
-        font-weight: 600;
-        margin-bottom: 50px;
-        font-family: 'Pixelify Sans', monospace;
+
+    div {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
+    
     .skill {
         width: 20px;
         padding-left: 10px;
