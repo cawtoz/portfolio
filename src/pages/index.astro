@@ -14,9 +14,7 @@ import Projects from "../components/projects.astro";
 		<link rel="icon" type="image/bmp" href="/Portfolio/cawtoz.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Carlos Torres</title>
@@ -37,18 +35,32 @@ import Projects from "../components/projects.astro";
 
 <style is:global>
     * { 
-        font-family: 'Fira Code', monospace;
-        color: #ffffff;
-        font-size: 16px;
+        font-family: 'Open Sans', monospace;
+        color: #e3e3e3;
+        font-size: 20px;
         font-weight: 500;
+        font-style: normal;
         margin: 0px;
         padding: 0px;
     }
+
     html {
         background-color: #0f0f10;
+        scroll-behavior: smooth;
     }
+
+    .title {
+        color: #bd1b1b;
+        font-size: 50px;
+        margin: 0px;
+        font-style: normal;
+        font-weight: 800;
+        margin-bottom: 30px;
+        font-family: 'Open Sans', monospace;
+    }
+
     section {
-        padding: 150px 10px;
+        padding: 70px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -59,6 +71,12 @@ import Projects from "../components/projects.astro";
         padding: 0px;
         padding-bottom: 100px;
         background-color: #161618;
+    }
+
+    @media(max-width: 400px) {
+        .title {
+            font-size: 40px;
+        }
     }
 
 </style>
