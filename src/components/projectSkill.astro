@@ -1,0 +1,70 @@
+---
+interface Props {
+    src: string;
+    alt: string;
+}
+
+const { src, alt } = Astro.props as Props;
+---
+<div class="tooltip-container">
+  <p class="tooltip">{alt}</p>
+  <img src={src} alt={alt} loading="lazy">
+</div>
+
+<style>
+
+img {
+  width: 20px;
+}
+
+/* From Uiverse.io by Siyu1017 */ 
+.tooltip-container {
+  position: relative;
+  transition: all 0.2s;
+  font-size: 17px;
+  padding: 1rem 0;
+  width: fit-content;
+  box-sizing: border-box;
+  --bg: linear-gradient(135deg, #a940fd, #5b46e8);
+  --color: #fff;
+  --tooltip-bg: #303030;
+  --tooltip-color: #fff;
+  --margin: 0.5rem;
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(-1 * var(--margin));
+  left: 50%;
+  transform: translateX(-50%) translateY(0%) scale(0);
+  padding: 0.3em 0.6em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+  background: var(--tooltip-bg);
+  color: var(--tooltip-color);
+  border-radius: 0.5rem;
+  z-index: 99999;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  background: var(--tooltip-bg);
+  border-bottom-right-radius: 0.175rem;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-60%) scale(0.7);
+}
+
+
+</style>

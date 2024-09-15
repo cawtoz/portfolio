@@ -6,14 +6,11 @@ interface Props {
 } 
 
 const { href, src, alt } = Astro.props as Props;
---- 
-
-<a href={href} target="_blank">
-    <div>
-        <img src={src} alt={alt} loading="lazy">
-        <span>{alt}</span>
-    </div>
-</a>
+---
+<div>
+    <img src={src} alt={alt} loading="lazy">
+    <span>{alt}</span>
+</div>
 
 
 <style>
