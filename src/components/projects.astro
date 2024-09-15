@@ -1,38 +1,44 @@
 ---
 import Loading from "./loading.astro";
 import Project from "./project.astro";
+import ProjectSkill from "./projectSkill.astro";
 ---
-
-<h2 class="title">Proyectos</h2>
-<div>
-    <Project 
-        title="Dine API" 
-        href="https://github.com/cawtoz/dine-api"
-        imgSrc="/Portfolio/projects/dine-api.webp"
-        imgAlt="dine-api">
-        <img class="skill" src="/Portfolio/skills/kotlin.webp" alt="Kotlin" loading="lazy">
-        <img class="skill" src="/Portfolio/skills/ktor.webp" alt="Ktor" loading="lazy">
-        <img class="skill" src="/Portfolio/skills/postgresql.webp" alt="PostgreSQL" loading="lazy">
-    </Project>
-    <Project 
-        title="Dine Docs" 
-        href="https://cawtoz.github.io/dine-docs"
-        imgSrc="/Portfolio/projects/dine-docs.webp"
-        imgAlt="dine-api">
-        <img class="skill" src="/Portfolio/skills/html.webp" alt="HTML" loading="lazy">
-        <img class="skill" src="/Portfolio/skills/css.webp" alt="CSS" loading="lazy">
-        <img class="skill" src="/Portfolio/skills/astro.webp" alt="Astro" loading="lazy">
-    </Project>
-    <Project 
-        title="Portafolio" 
-        href="https://github.com/cawtoz/Portfolio"
-        imgSrc="/Portfolio/projects/portfolio.webp"
-        imgAlt="dine-api">
-        <img class="skill" src="/Portfolio/skills/html.webp" alt="HTML" loading="lazy">
-        <img class="skill" src="/Portfolio/skills/css.webp" alt="CSS" loading="lazy">
-        <img class="skill" src="/Portfolio/skills/astro.webp" alt="Astro" loading="lazy">
-    </Project>
-</div>
+<section id="projects">
+    <h2 class="title">Proyectos</h2>
+    <div>
+        <Project 
+            title="Dine API" 
+            href="https://github.com/cawtoz/dine-api"
+            imgSrc="/portfolio/projects/dine-api.webp"
+            imgAlt="dine-api">
+            <ProjectSkill src="/portfolio/skills/kotlin.webp" alt="Kotlin"/>
+            <ProjectSkill src="/portfolio/skills/ktor.webp" alt="Ktor"/>
+            <ProjectSkill src="/portfolio/skills/postgresql.webp" alt="PostgreSQL"/>
+            <ProjectSkill class="skill" src="/portfolio/skills/intellij.webp" alt="Intellij"/>
+            
+        </Project>
+        <Project 
+            title="Dine Docs" 
+            href="https://cawtoz.github.io/dine-docs"
+            imgSrc="/portfolio/projects/dine-docs.webp"
+            imgAlt="dine-docs">
+            <ProjectSkill src="/portfolio/skills/html.webp" alt="HTML"/>
+            <ProjectSkill src="/portfolio/skills/css.webp" alt="CSS"/>
+            <ProjectSkill src="/portfolio/skills/astro.webp" alt="Astro"/>
+            <ProjectSkill src="/portfolio/skills/vscode.webp" alt="VS Code"/>
+        </Project>
+        <Project 
+            title="Portafolio" 
+            href="https://github.com/cawtoz/portfolio"
+            imgSrc="/portfolio/projects/portfolio.webp"
+            imgAlt="portfolio">
+            <ProjectSkill src="/portfolio/skills/html.webp" alt="HTML"/>
+            <ProjectSkill src="/portfolio/skills/css.webp" alt="CSS"/>
+            <ProjectSkill src="/portfolio/skills/astro.webp" alt="Astro"/>
+            <ProjectSkill src="/portfolio/skills/vscode.webp" alt="VS Code"/>
+        </Project>
+    </div>
+</section>
 
 <style>
 
