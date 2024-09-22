@@ -1,4 +1,4 @@
 ## ***Portfolio Web*** 
 [Visit the website](https://cawtoz.github.io/portfolio/) 🌐
-![portfolio-pc](https://github.com/user-attachments/assets/86683138-106f-4205-918e-3e033b5b06d3)
-![portfolio-mobile](https://github.com/user-attachments/assets/8234df1e-6272-4b3c-aadd-42ac0b2c73aa)
+![portfolio-pc](https://github.com/user-attachments/assets/d6dfb686-4e7f-4dd1-8ad8-a254b579ffe8)
+![portfolio-mobile](https://github.com/user-attachments/assets/69e124c0-0312-4352-b540-42bb9828d009)
