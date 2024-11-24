@@ -30,8 +30,8 @@ const { title, href, imgSrc, imgAlt} = Astro.props as Props;
 
 .skills {
   display: flex;
-  width: 50px;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -41,9 +41,11 @@ const { title, href, imgSrc, imgAlt} = Astro.props as Props;
   --accent-color: #bd1b1b;
   position: relative;
   width: 250px;
+  height: 280px;
   padding: 20px;
   border-radius: 15px;
   display: flex;
+  gap: 5px;
   flex-direction: column;
   background-color: var(--bg-color);
   transition: all 0.2s;
@@ -85,6 +87,7 @@ a {
   height: 40px;
   transform: rotate(-45deg);
   transition: all 0.3s;
+  margin-top: auto;
   margin-left: auto;
 }
 
